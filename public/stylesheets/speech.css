@@ -1,0 +1,164 @@
+/* CSS for styling speech : original sass code from here  https://codepen.io/8eni/pen/YWoRGm -*/
+/* This class wraps the whole speech content area */
+
+.speech-wrapper{
+    padding: 30px 40px;
+}
+
+/* These classes define the markup for admin messages*/
+
+.speech-wrapper .admin{
+    width: 300px;
+    height: auto;
+    display: block;
+    background: #f3b5b5;
+    border-radius: 4px;
+    box-shadow: 2px 8px 5px #000;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.speech-wrapper .admin .txt{
+    padding: 8px 55px 8px 14px;
+}
+
+.speech-wrapper .admin .txt .name{
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0 0 4px;
+    color: red;
+}
+
+.speech-wrapper .admin .txt .message{
+    font-size: 12px;
+    margin: 0;
+    color: #2b2b2b;
+}
+
+.speech-wrapper .admin .txt .timestamp{
+    font-size: 11px;
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    text-transform: uppercase; color: #999
+}
+
+/* These classes define the markup for speech bubbles from other ie. they are the ones on the left*/
+
+.speech-wrapper .bubble{
+    width: 240px;
+    height: auto;
+    display: block;
+    background: #f5f5f5;
+    border-radius: 4px;
+    box-shadow: 2px 8px 5px #000;
+    position: relative;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.speech-wrapper .bubble .txt{
+    padding: 8px 55px 8px 14px;
+}
+
+.speech-wrapper .bubble .txt .name{
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0 0 4px;
+    color: #3498db;
+}
+
+.speech-wrapper .bubble .txt .message{
+    font-size: 12px;
+    margin: 0;
+    color: #2b2b2b;
+}
+
+.speech-wrapper .bubble .txt .timestamp{
+    font-size: 11px;
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    text-transform: uppercase; color: #999
+}
+    
+.speech-wrapper .bubble .bubble-arrow {
+    position: absolute;
+    width: 0;
+    bottom:42px;
+    left: -16px;
+    height: 0;
+}
+
+.speech-wrapper .bubble .bubble-arrow:after {
+    content: "";
+    position: absolute;
+    border: 0 solid transparent;
+    border-top: 9px solid #f5f5f5;
+    border-radius: 0 20px 0;
+    width: 15px;
+    height: 30px;
+    transform: rotate(145deg);
+}
+
+/* These classes define the markup for speech bubbles from the user ie. they are the ones on the right */
+
+.speech-wrapper .bubble-alt{
+    width: 240px;
+    height: auto;
+    display: block;
+    background: #84e280;
+    border-radius: 4px;
+    box-shadow: 2px 8px 5px #000;
+    position: relative;
+    /*margin: 0 0 0 60px;*/
+    margin-left: 60px;
+    margin-bottom: 15px;
+}
+
+.speech-wrapper .bubble-alt .txt{
+    padding: 8px 55px 8px 14px;
+}
+
+.speech-wrapper .bubble-alt .txt .name{
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0 0 4px;
+    color: #2ecc71;
+}
+
+.speech-wrapper .bubble-alt .txt .message{
+    font-size: 12px;
+    margin: 0;
+    color: #2b2b2b;
+}
+
+.speech-wrapper .bubble-alt .txt .timestamp{
+    font-size: 11px;
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    text-transform: uppercase; color: rgb(126, 126, 126)
+}
+
+.speech-wrapper .bubble-alt .bubble-arrow {
+    position: absolute;
+    width: 0;
+    bottom: 40px;
+    left: auto;
+    right: -2px;
+    height: 0;
+}
+
+.speech-wrapper .bubble-alt .bubble-arrow:after {
+    content: "";
+    position: absolute;
+    border: 0 solid transparent;
+    border-top: 9px solid #84e280;
+    border-radius: 0 20px 0;
+    width: 15px;
+    height: 30px;
+    transform: rotate(45deg) scaleY(-1);
+}

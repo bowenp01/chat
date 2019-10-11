@@ -1,0 +1,22 @@
+.room-wrapper{
+    padding: 30px 40px;
+}
+
+/* These classes define the markup for admin messages*/
+
+.room-wrapper .room{
+    width: 300px;
+    height: auto;
+    display: block;
+    background: #8c8eee;
+    border-radius: 4px;
+    box-shadow: 2px 8px 5px #000;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.room-wrapper .room .txt{
+    padding: 8px 55px 8px 14px;
+}

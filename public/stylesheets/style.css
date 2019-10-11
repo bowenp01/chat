@@ -1,0 +1,61 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+  }
+
+a{
+    color: #00B7FF;
+}
+
+.title-bar{
+    width: 400px;
+    height: 50px;
+    background-color: rgb(7, 94, 84);
+}
+
+.title-bar h2{
+    color: white;
+    padding: 10px;
+}
+
+.content{
+    width: 400px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(7, 94, 84); 
+}
+
+#message-area{
+    width: 400px;
+    height: 600px;
+    overflow: auto;
+    background-image: url('/images/background.jpg');
+    padding-bottom: 1em;
+}
+
+#room-area{
+    width: 400px;
+    height: 600px;
+    overflow: auto;
+    background-image: url('/images/background.jpg');
+    padding-bottom: 1em;   
+}
+
+#send-message{
+    width: 300px;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+#send-form{
+    background-color: rgb(7, 94, 84);
+    padding-top: 1em;
+    padding-left: 1em;   
+}
+
+
+
+

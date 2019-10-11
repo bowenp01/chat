@@ -1,0 +1,89 @@
+<!doctype html>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang = 'en'>
+
+    <head>
+        <title>Chat</title>
+        <link rel="stylesheet" href="/stylesheets/style.css"></link>
+        <link rel="stylesheet" href="/stylesheets/tabs.css"></link>
+        <link rel="stylesheet" href="/stylesheets/speech.css"></link>
+        <link rel="stylesheet" href="/stylesheets/rooms.css"></link>
+        <link rel="stylesheet" href="/stylesheets/snackbar.css"></link>
+    </head>
+
+    <body>
+        <div class="content">
+
+            <!--The title bar where we display the title and ?options button-->
+            <div class="title-bar">
+                <h2 id="current-room">CAV Chat - Lobby</h2>    
+            </div>
+
+            <!--The 'tabs' where the user can choose between chats and rooms-->
+            <div class="tab">
+                <button class="tablinks" id="defaultOpen" onClick="openPage(event,'message-tabsheet')">Chats</button>
+                <button class="tablinks" onClick="openPage(event,'room-tabsheet')">Rooms</button>
+            </div>
+
+            <!--The tabsheet for chats-->
+            <div id = "message-tabsheet" class="tabcontent">
+                <!--message-area holds the background image-->
+                <div id="message-area">
+                    <!--Speech bubbles get appended to this div using jquery. The speech-wrapper class applies the speech bubble styling-->
+                    <div class="speech-wrapper" id="messages"></div>
+                </div> 
+            </div>
+
+            <!--The tabsheet for rooms-->
+            <div id="room-tabsheet" class="tabcontent">
+                <div id="room-area">
+                    <div class="room-wrapper" id="rooms">
+
+                        <div class="room">
+                            <div class="txt">
+                                Lobby
+                            </div>
+                        </div>                        
+
+                        <div class="room">
+                            <div class="txt">
+                                Bed Management
+                            </div>
+                        </div>
+
+                        <div class="room">
+                            <div class="txt">
+                                X-Ray
+                            </div>
+                        </div>
+                        
+                        <div class="room">
+                            <div class="txt">
+                                Laborotories
+                            </div>
+                        </div> 
+
+                    </div>
+                </div>
+            </div>
+
+            <!--Snackbar for admin messages-->
+            <div id="snackbar">Snackbar</div>
+
+            <!--Heres where the user inputs text and clicks the send button-->
+            <form id="send-form">
+                <input id="send-message"/>
+                <input id="send-button" type="submit" value="send"/>
+            </form>
+
+        </div>
+
+
+        <script src="/socket.io/socket.io.js" type ="text/javascript"></script>
+        <script src="http://code.jquery.com/jquery-1.8.0.min.js" type ="text/javascript"></script>
+        <script src="javascripts/chat.js" type ="text/javascript"></script>
+        <script src="javascripts/chat_ui.js" type ="text/javascript"></script>
+
+    </body>
+
+</html>
